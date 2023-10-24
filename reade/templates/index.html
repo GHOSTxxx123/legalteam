@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios@1.5.1/dist/axios.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGALTEAM</title>
+</head>
+<body>
+    <main>
+        <section class="px-5 py-6 py-xxl-10 hcf-bp-center hcf-bs-cover hcf-overlay hcf-transform" style="background-image: url('./img/sud.jpg');">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+                <img class="d-block mx-auto mb-4" style="border-radius: 5%;" src="{{ url_for('send_file', filename='legalteam.jpg') }}" alt="" width="172" height="157">
+                <h1 class="display-3 fw-bold mb-3">LEGALTEAM</h1>
+                <ul class="text-start fs-5">
+                  <li>Более 15 лет юридической практики в Казахстане</li>
+                  <li>Более 100 000 успешных кейсов</li>
+                  <li>Более 500 судебных дел в Республике Казахстан</li>
+                  <li>Более 3 млрд тенге c экономили нашим клиентам</li>
+                  <li>Более 92% побед в судах</li>
+                </ul>
+                <p class="lead mb-1 fs-4">ГОТОВЫЕ ЮРИДИЧЕСКИЕ РЕШЕНИЯ ДЛЯ КОМПАНИЙ В АЛМАТЫ.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="#vue" class="btn btn-outline-light btn-lg px-4">Получить консультацию</a>
+                  </div>
+                <!-- <p class="lead mb-5 mt-3 ">Предотвращение судов, штрафов, издержек, не исполнения обязательств и предписаний</p> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 fs-1 text-center">Юридические услуги</h2>
+            <p class="pb-2 fs-5 border-bottom text-center" >Мы специализируемся в следующих сферах</p>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                  <img src="https://thumb.tildacdn.com/tild6262-6233-4863-a563-323665326632/-/resize/180x/-/format/webp/icons8--100.png" data-original="https://static.tildacdn.com/tild6262-6233-4863-a563-323665326632/icons8--100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">Взыскание задолженности</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img  src="https://thumb.tildacdn.com/tild3034-3562-4435-a235-633531346461/-/resize/180x/-/format/webp/icons8--100.png" data-original="https://static.tildacdn.com/tild3034-3562-4435-a235-633531346461/icons8--100.png" style="width:90px;" alt="">
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">Защита в суде</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img src="https://thumb.tildacdn.com/tild6436-6638-4835-b762-663864633063/-/resize/180x/-/format/webp/icons8---100.png" data-original="https://static.tildacdn.com/tild6436-6638-4835-b762-663864633063/icons8---100.png" style="width:90px;" alt="">
+                  </div>
+                <div>
+                  <h3 class="fs-5 text-center mt-2 text-body-emphasis">Договорное право</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                  <img src="https://thumb.tildacdn.com/tild6437-3835-4133-b261-626435326433/-/resize/180x/-/format/webp/icons8---100.png" data-original="https://static.tildacdn.com/tild6437-3835-4133-b261-626435326433/icons8---100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">Обжалование действий гос. органов</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img src="https://thumb.tildacdn.com/tild6131-6363-4463-b036-323630663364/-/resize/180x/-/format/webp/icons8-lawyer-100.png" data-original="https://static.tildacdn.com/tild6131-6363-4463-b036-323630663364/icons8-lawyer-100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">Юридическое сопровождение бизнеса</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img src="https://thumb.tildacdn.com/tild6164-3465-4566-a332-383435323339/-/resize/180x/-/format/webp/icons8--100.png" data-original="https://static.tildacdn.com/tild6164-3465-4566-a332-383435323339/icons8--100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="fs-5 text-center mt-2 text-body-emphasis">Лицензирование и получение разрешительных документов</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                  <img src="https://thumb.tildacdn.com/tild3235-6230-4165-b863-316631316633/-/resize/180x/-/format/webp/icons8--100.png" data-original="https://static.tildacdn.com/tild3235-6230-4165-b863-316631316633/icons8--100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">Семейные споры</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img src="https://thumb.tildacdn.com/tild6332-6465-4463-a232-366561626339/-/resize/180x/-/format/webp/icons8--2-96.png" data-original="https://static.tildacdn.com/tild6332-6465-4463-a232-366561626339/icons8--2-96.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">Жилищные и земельные обязательства</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <img src="https://thumb.tildacdn.com/tild3033-3064-4532-a435-306130653462/-/resize/180x/-/format/webp/icons8--100.png" data-original="https://static.tildacdn.com/tild3033-3064-4532-a435-306130653462/icons8--100.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="fs-5 text-center mt-2 text-body-emphasis">Вопросы наследства</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 py-5 justify-content-center row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                  <img src="https://thumb.tildacdn.com/tild6231-3130-4937-a331-333863663262/-/resize/180x/-/format/webp/icons8-copyright----.png" data-original="https://static.tildacdn.com/tild6231-3130-4937-a331-333863663262/icons8-copyright----.png" style="width:90px;" alt="">
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">Регистрация товарных знаков</h3>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+
+          <h2 class="pb-2 fs-1 text-center">Почему с нами работают?</h2>
+
+          <div class=" container my-5">
+            <div class="row p-4 p-0 pe-lg-0 pt-lg-5 align-items-center rounded-3  shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Успешный опыт в защите граждан и бизнеса</h1>
+                <p class="lead">Опытные специалисты LEGALTEAM детально оценят ситуацию, определят Ваши потребности и предложат оптимальные пути решения. 15-летний опыт нашей компании позволил нам успешно завершить более 500 судебных дел.</p>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                  <img class="rounded-lg-3" src="{{ url_for('send_file', filename='heroi_1_img.jpg') }}" alt="" width="720">
+              </div>
+            </div>
+          </div>
+
+          <div class=" container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3  shadow-lg">
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="{{ url_for('send_file', filename='heroi_2_img.jpg') }}" alt="" width="720">
+                </div>
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Качественная правовая помощь и надежная защита</h1>
+                    <p class="lead">В юридической сфере встречаются некомпетентные и зачастую непорядочные юристы и фирмы. Вы получаете сервис высоких стандартов, а мы, в свою очередь, предлагаем и добиваемся конкретного результата, доказательством которого является 92% побед в суде.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class=" container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3  shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">За нашу работу платит должник</h1>
+                <p class="lead">Ваши затраты - это не только стоимость услуги, но и потраченное время, возможные риски, эмоциональные затраты. Возмещение этих и других издержек должен понести виновник.</p>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                  <img class="rounded-lg-3" src="{{ url_for('send_file', filename='heroi_3_img.jpg') }}" alt="" width="720">
+              </div>
+            </div>
+          </div>
+
+          <div class=" container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3  shadow-lg">
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="{{ url_for('send_file', filename='heroi_4_img.jpg') }}" alt="" width="720">
+                </div>
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Сервисное обслуживание</h1>
+                    <p class="lead">Вместе с юридическими услугами, Вы получаете наработанную годами надежную партнерскую сеть из судебных исполнителей, банкротных управляющих, адвокатов, нотариусов, налоговых консультантов, оценщиков и других.</p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 fs-1 text-center">О КОМПАНИИ В ЦИФРАХ</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                  <div class="num out-num">15</div>
+                </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">лет опыта в юридической сфере</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">12</div>
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">лет опыта в строительной сфере</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">100000</div>
+                  </div>
+                <div>
+                  <h3 class="fs-5 text-center mt-2 text-body-emphasis">Более 100000 договоров подряда составлено</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">10000</div>
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">Успешных кейсов</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">500</div>
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">Судебных дел</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">25</div>
+                  </div>
+                <div>
+                  <h3 class="fs-5 text-center mt-2 text-body-emphasis">Компании обслуживается у нас</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 py-5 justify-content-center row-cols-1 row-cols-lg-3">
+                <!-- d-flex -->
+              <div class="col  align-items-center">
+                <!-- d-inline-flex flex-shrink-0 align-items-center justify-content-center -->
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">3</div>
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center ">более 3 млрд тенге взыскано</h3>
+                </div>
+              </div>
+              <div class="col align-items-center">
+                <div class="icon-square text-body-emphasis text-center fs-4 me-3">
+                    <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                    <div class="num out-num">92</div>
+                  </div>
+                <div>
+                  <h3 class="mt-2 fs-5 text-body-emphasis text-center">процентов побед в судах</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <div id="vue" class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Узнайте как составить договор с наименьшими рисками бесплатно</h1>
+              <p class="col-lg-10 fs-4">Оставьте заявку и получите документ в PDF формате</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <div class="form-floating mb-3">
+                  <input type="text" id="name" v-model="name" class="form-control">
+                  <label for="floatingInput">Имя</label>
+                  <div class="invalid-feedback" id="valid_name" style="display: none;">
+                    Требуется указать имя.
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" v-model="number" class="form-control no-arrow" id="number">
+                  <label for="floatingPassword">Номер</label>
+                  <div class="invalid-feedback" id="valid_number" style="display: none;">
+                    Требуется указать номер.
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" v-model="email" class="form-control" id="email">
+                  <label for="floatingPassword">Email</label>
+                  <div class="invalid-feedback" id="valid_email" style="display: none;">
+                    Требуется указать Email.
+                  </div>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" id="send" @click="getSend">Получить консультацию</button>
+                  <hr class="my-4">
+                  <div class="text-dark text-center fs-3" id="valid_send" style="display: none;">
+                    Заявка отправлена
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 fs-1 text-center">НАШИ КЛИЕНТЫ</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col align-items-center">
+                <div>
+                    <div class="logos over">
+                        <div class="logos-slide">
+                          <img src="{{ url_for('send_file', filename='logo-min.png') }}"/>
+                          <img src="{{ url_for('send_file', filename='btk.png') }}"/>
+                          <img src="{{ url_for('send_file', filename='-гешенкэ_кривые.png') }}" />
+                          <img src="{{ url_for('send_file', filename='del-sot.png')}}" />
+                          <img src="{{ url_for('send_file', filename='img-20160812-wa0000.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='logo_1.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='ATS_008.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='logo_2.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='Group_9.svg')}}" />
+                          <img src="{{ url_for('send_file', filename='psg_energi.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='amal.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='isg.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='emiks.jpg')}}" />
+                          <img src="{{ url_for('send_file', filename='areal.jpg')}}" />
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+
+
+    </main>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item nav-link px-2 fs-1 text-body-secondary fw-bold">Контакты</li>
+        </ul>
+        <p class="text-body-secondary text-center">Алматы, ул. Тимирязева 37</p>
+        <p class="text-body-secondary text-center"><a class="text-dark" href="tel:+77774444140">+7 (777) 4-444-140</a></p>
+        <p class="fs-5 text-body-secondary text-center">legalteam.kz@gmail.com</p>
+        <div class="w-100 m-auto justify-content-center text-center">
+          <a href="https://wa.me/77774444140">
+            <svg class=" col m-auto" width="48px" height="48px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM69.7626 28.9928C64.6172 23.841 57.7739 21.0027 50.4832 21C35.4616 21 23.2346 33.2252 23.2292 48.2522C23.2274 53.0557 24.4823 57.7446 26.8668 61.8769L23 76L37.4477 72.2105C41.4282 74.3822 45.9107 75.5262 50.4714 75.528H50.4823C65.5029 75.528 77.7299 63.301 77.7363 48.2749C77.7408 40.9915 74.9089 34.1446 69.7626 28.9928ZM62.9086 53.9588C62.2274 53.6178 58.8799 51.9708 58.2551 51.7435C57.6313 51.5161 57.1766 51.4024 56.7228 52.0845C56.269 52.7666 54.964 54.2998 54.5666 54.7545C54.1692 55.2092 53.7718 55.2656 53.0915 54.9246C52.9802 54.8688 52.8283 54.803 52.6409 54.7217C51.6819 54.3057 49.7905 53.4855 47.6151 51.5443C45.5907 49.7382 44.2239 47.5084 43.8265 46.8272C43.4291 46.1452 43.7837 45.7769 44.1248 45.4376C44.3292 45.2338 44.564 44.9478 44.7987 44.662C44.9157 44.5194 45.0328 44.3768 45.146 44.2445C45.4345 43.9075 45.56 43.6516 45.7302 43.3049C45.7607 43.2427 45.7926 43.1776 45.8272 43.1087C46.0545 42.654 45.9409 42.2565 45.7708 41.9155C45.6572 41.6877 45.0118 40.1167 44.4265 38.6923C44.1355 37.984 43.8594 37.3119 43.671 36.8592C43.1828 35.687 42.6883 35.69 42.2913 35.6924C42.2386 35.6928 42.1876 35.6931 42.1386 35.6906C41.7421 35.6706 41.2874 35.667 40.8336 35.667C40.3798 35.667 39.6423 35.837 39.0175 36.5191C38.9773 36.5631 38.9323 36.6111 38.8834 36.6633C38.1738 37.4209 36.634 39.0648 36.634 42.2002C36.634 45.544 39.062 48.7748 39.4124 49.2411L39.415 49.2444C39.4371 49.274 39.4767 49.3309 39.5333 49.4121C40.3462 50.5782 44.6615 56.7691 51.0481 59.5271C52.6732 60.2291 53.9409 60.6475 54.9303 60.9612C56.5618 61.4796 58.046 61.4068 59.22 61.2313C60.5286 61.0358 63.2487 59.5844 63.8161 57.9938C64.3836 56.4033 64.3836 55.0392 64.2136 54.7554C64.0764 54.5258 63.7545 54.3701 63.2776 54.1395C63.1633 54.0843 63.0401 54.0247 62.9086 53.9588Z" fill="#b0d0be"></path></svg>
+          </a>
+          <a href="https://t.me/+77774444140">
+            <svg class=" col m-auto" width="48px" height="48px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#b0d0be"></path></svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    
+      <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+      </script>
+
+
+      <script>
+        $(document).ready(function(){
+            $('.num').counterUp({
+                delay: 10,
+                time: 350
+            });
+        });
+      </script>
+
+      <script>
+        const boxes = document.querySelectorAll('.box')
+        window.addEventListener('scroll', checkBoxes)
+
+        checkBoxes();
+
+        function checkBoxes(){
+            const triggerBottom = window.innerHeight / 5 * 4
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+                if (boxTop < triggerBottom){
+                    box.classList.add('show')
+                } else {
+                    box.classList.remove('show')
+                }
+            })
+        }
+
+      </script>
+
+<script type="text/javascript">
+  var app = new Vue({
+    el: '#vue',
+    data: {
+      url:  window.location.origin,
+      error: [],
+      name: null,
+      number: null,
+      email: null,
+    },
+    delimiters: ['{', '}'],
+    methods: {
+      getSend(){
+        if (this.name && this.number && this.email) {
+        axios.get("https://8d4b-217-11-72-40.ngrok-free.app" + `/send_gmail/${this.name}/${this.number}/${this.email}`, {
+          headers: {
+            'Access-Control-Allow-Origin':'*'
+          }
+        })
+        let valid_name = document.getElementById('valid_name');
+        valid_name.style.display = 'none';
+        let valid_number = document.getElementById('valid_number');
+        valid_number.style.display = 'none';
+        let valid_email = document.getElementById('valid_email');
+        valid_email.style.display = 'none';
+        let valid_send = document.getElementById('valid_send');
+        valid_send.style.display = 'block';
+        document.getElementById('send').disabled = true;
+        // console.log(this.url + `/send_gmail/${this.name}/${this.number}/${this.email}`)        
+      }
+
+      if (!this.name) {
+        // this.error.push('Требуется указать имя.');
+        let valid_name = document.getElementById('valid_name');
+        valid_name.style.display = 'block';
+      }
+      if (!this.number) {
+        // this.error.push('Требуется указать имя.');
+        let valid_number = document.getElementById('valid_number');
+        valid_number.style.display = 'block';
+      }
+      if (!this.email) {
+        // this.error.push('Требуется указать имя.');
+        let valid_email = document.getElementById('valid_email');
+        valid_email.style.display = 'block';
+      }
+    },
+  }
+  })
+
+</script>
+
+</body>
+</html>
